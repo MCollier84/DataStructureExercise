@@ -44,7 +44,7 @@ const droids = {
     astromech: "R2D2",
     protocol: "C-3PO",
     assassin: "IG-88"
-}
+};
 
 // 3b
 console.log(droids["astromech"]);
@@ -59,15 +59,27 @@ console.log(droids.assassin);
 // Bonus
 // 4
 console.log("Darth Vader"[6]);
+// console.log(starWarsVillains[0][6]); First index select a specific item in the array and the second number is selecting the specific character in the string.
 
 // 5
 console.log(sithLords.slice(-2, -1));
 
-// 6
-const starWarsMovies = {
-    episodeOne: "The Phantom Menace",
+// 6a
+const starWarsMovies = [
+    {episodeOne: "The Phantom Menace",
     episodeTwo: "Attack of the Clones",
-    episodeThree: "Revenge of the Sith",
-    
+    episodeThree: "Revenge of the Sith"
+    },
+    {episodeFour: "A New Hope",
+    episodeFive: "The Empire Strikes Back",
+    episodeSix: "Return of the Jedi"
+    },
+    {episodeSeven: "The Force Awakens",
+    episodeEight: "The Last Jedi",
+    episodeNine: "The Rise of Skywalker"
+    }
+];
 
-}
+//   6b
+starWarsMovies.splice(1, 0, "Solo", "Rogue One");
+console.log(starWarsMovies);
