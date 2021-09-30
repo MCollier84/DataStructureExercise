@@ -37,8 +37,7 @@ const starWarsVillains = sithLords.concat(imperialOfficers);
 // console.log(starWarsVillains);
 
 // 2d
-sithLords.slice(1, 3);
-console.log(sithLords);
+console.log(starWarsVillains.slice(0, 2));
 
 // 3a
 const droids = {
@@ -56,3 +55,19 @@ console.log(droids.protocol);
 // 3d
 droids.assassin = "IG-11";
 console.log(droids.assassin);
+
+// Bonus
+// 4
+console.log("Darth Vader"[6]);
+
+// 5
+console.log(sithLords.slice(-2, -1));
+
+// 6
+const starWarsMovies = {
+    episodeOne: "The Phantom Menace",
+    episodeTwo: "Attack of the Clones",
+    episodeThree: "Revenge of the Sith",
+    
+
+}
